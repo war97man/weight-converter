@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Weight convert</title>
+	<!-- bootstrap -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<style>
+		body {
+			margin-top: 70px;
+			background: #333;
+			color: #fff;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6 offset-md-3">
+				<h1 class="display-4 text-center mb-3">Weight Converter</h1>
+				<form>
+					<div class="form-group">
+						<label for="lbsInput" class="custom-control-label"><i id="lock" class="fa"></i></label>
+						<input name="lbsInput" id="lbsInput" type="number" class="form-control form-control-lg" placeholder="Enter quantity...">
+						<select id="selectt" class="form-control mt-2">
+							<option  selected disabled>Chose something</option>
+							<option>Kilograms</option>
+							<option>Pounds</option>
+							<option>Ounces</option>
+						</select>
+					</div>
+				</form>
+				<div id="output">
+					<div class="card card-primary mb-2">
+						<div class="card-block">
+							<h4>Pounds:</h4>
+							<div id="poundsOutput">								
+							</div>
+						</div>
+					</div>
+
+					<div class="card card-success mb-2">
+						<div class="card-block">
+							<h4>Kilograms:</h4>
+							<div id="kgOutput">								
+							</div>
+						</div>
+					</div>
+
+					<div class="card card-danger mb-2">
+						<div class="card-block">
+							<h4>Ounces:</h4>
+							<div id="ozOutput">								
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="scrip.js"></script>
+</body>
+</html>
